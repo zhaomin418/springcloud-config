@@ -1,0 +1,16 @@
+spring:
+    profiles:
+      active:
+      - dev #当前使用环境
+---
+content: dev content
+spring:
+  profiles: dev   #测试环境
+  application:
+    name: hello-service
+---
+content: test content
+spring:
+  profiles: test #测试环境
+  application:
+    name: hello-service
